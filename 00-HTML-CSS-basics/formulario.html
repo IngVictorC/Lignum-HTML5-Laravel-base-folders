@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Formulario</title>
+    <meta name="description" content="Pagina de formulario">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <hr/>
+    <form action="" method="POST">
+      
+      <label name="nombre"> Nombre </label>
+      <input type="text"  required autofocus>
+      <br/>
+      <label name="apellido"> Apellido </label>
+      <input type="text" required>
+      <br/>
+      <label name="mail"> E-Mail </label>
+      <input type="email" title="Ingrese un mail valido" required>
+      <br/>
+      <label name="fechanac"> Fecha de Nacimiento </label>
+      <input type="date" required>
+      <br/>
+      <label name="deportes"> Deportes </label>
+      <select name="deportes">
+        <option value=""> Elija una opcion </option>
+        <option value="futbol"> Futbol </option>
+        <option value="basquet"> Basquet </option>
+        <option value="golf"> Golf </option>
+        <option value="ajedrez"> Ajedrez </option>
+        <option value="tennis"> Tennis </option>
+      </select>
+      <br/>
+      <label name="biografia"> Biografia </label>
+      <textarea name="biografia" placeholder="Escriba una breve descripcion"></textarea>
+      <br/>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar campos</button>
+
+    </form>
+  </body>
+</html>
