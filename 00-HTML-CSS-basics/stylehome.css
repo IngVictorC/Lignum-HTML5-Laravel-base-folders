@@ -1,0 +1,147 @@
+
+* {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	/*overflow: hidden;*/
+    max-width: 85.875em;
+}
+title{
+	display: none;
+}
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+body{
+	color: #222;
+    font-family: 'AktivGroteskW01-Regular', sans-serif;
+    background-color: #fff;
+    /*line-height: 1.5em;
+    height: auto;*/
+    position: relative;
+}
+
+.column {
+	position: relative;
+	float: left;
+	display: block;
+	width: 30%;
+	min-height: 2em;
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	margin-left: 20px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.column2 {
+	position: relative;
+	float: left;
+	display: block;
+	width: 30%;
+	min-height: 2em;
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	margin-left: 20px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.column3{
+	position: relative;
+	float: right;
+	display: block;
+	left: 10px;
+	width: 60%;
+	min-height: 2em;
+	margin-right: 60px;
+	margin-top: 20px;
+	
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	overflow: hidden;
+}
+.navigation {
+	position: relative;
+	float: right;
+	display: block;
+	left: 10px;
+	margin-right: 60px;
+	margin-top: 30px;
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	width: 60%;
+	min-height: 2em;
+	overflow: hidden;
+}
+/* Estilo y grid de las imagenes*/
+/*
+@media screen and (max-width: 480px){
+    .container .div {
+        grid-column: 1 / 3;
+    }
+}*/
+.container{
+	width: 90%;
+	max-width: 1000px;
+	margin-left: 20px;
+	top: 50px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+
+/*
+.container > div {
+	background: rgb(122, 121, 121);
+	padding: 10px;
+	border-radius: 4px;
+	width: 300px;
+	height: 200px;
+	display: block;
+	
+}*/
+img{
+	width: 300px;
+    height: 200px;
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+	
+}
+
+.screen {
+	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	border-radius: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: 1000;
+	transition: all 0.3s ease-in-out;
+}
+.screen:hover {
+  opacity: 1
+}
+
+.title {
+	color: #fff;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	margin-left: -30px;
+  }
+  .screen:hover .title {
+	margin-left: 0;
+  }
+  #titulo {
+	font-size: 2em;
+	padding: 5%;
+  }
