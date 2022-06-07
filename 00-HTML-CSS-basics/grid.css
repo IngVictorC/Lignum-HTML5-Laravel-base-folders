@@ -1,0 +1,25 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.column{
+  position:relative;
+  float: left;
+  display: block;
+	width:33.33332%;
+	min-height:1em;
+	overflow:hidden;
+}
+.navigation{
+  position:relative;
+  float: right;
+  display: block;
+  border-radius: 5px;
+	width:66.66667%;
+	min-height:1em;
+	overflow:hidden;
+}
