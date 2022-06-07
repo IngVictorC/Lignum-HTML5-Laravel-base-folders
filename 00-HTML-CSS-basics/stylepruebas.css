@@ -1,0 +1,74 @@
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+  }
+
+body {
+	background: #eeeeee;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header p {
+	font-size: 50px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* Para poner las lineas de fondo*/
+div {
+	display: block;
+}
+
+.col {
+	position: absolute;
+	width: 1px;
+	background-color: rgba(0, 0, 0, 0.075);
+	height: 100%;
+	top: 0px;
+}
+
+.col1 {
+	left: 16.66667%;
+}
+
+.col2 {
+	left: 33.33334%;
+}
+
+.col3 {
+	left: 50%;
+}
+
+.col4 {
+	left: 66.66667%;
+}
+
+.col5 {
+	left: 83.33334%;
+}
+/*fin lineas de fondo*/
+
+/*
+.container {
+	width: 90%;
+    float: left;
+	max-width: 1000px;
+	border:5px solid #000;
+	margin: auto;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+}*/
+
+.container > div {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	background: #2f89fc;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
